@@ -1,31 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="handcoded">
     <title>Encuesta</title>
     <style>
-        header{
-            position: fixed;
+        header {
             width: 100%;
-            margin-top: 0;
+            top: 0;
+            text-align: center;
+            padding: 10px;
+            border: solid;
+            border-radius: 10px;
+            background-color: gray;
+        }
+
+        body {
+            margin-top: 20px;
+        }
+
+        .parrafo {
+            font-size: 20px;
             text-align: center;
         }
     </style>
 </head>
 
 <body>
- <header>
-    <h1>Bienvenido a la encuesta</h1>
- </header>
+    <header>
+        <h1>Bienvenido a la encuesta</h1>
+    </header>
 
+    <p class="parrafo">Preguntas de seleccion de una única respuesta</p>
     <form action="">
-        <label for="">
+        <ul>
+            <li>
 
-        </label>
+                <p>1. ¿Qué hace position: fixed en un elemento?</p>
+                <label><input type="radio" name="p1" value="a"> A. Lo posiciona relativo a su elemento padre</label>
+                <label><input type="radio" name="p1" value="b"> B. Lo fija en la pantalla sin importar el scroll</label>
+                <label><input type="radio" name="p1" value="c"> C. Se mueve con el scroll pero pegado arriba</label>
 
+            </li>
+        </ul>
+        <ul>
+            <li>
 
+                <p>2. ¿Cuál es la diferencia entre display: inline y display: inline-block?</p>
+                <label><input type="radio" name="p2" value="a"> A. Son exactamente lo mismo</label>
+                <label><input type="radio" name="p2" value="b"> B. D.inline ocupa todo el ancho, D.inline-block
+                    no</label>
+                <label><input type="radio" name="p2" value="c"> C. D.inline-block acepta width y height, inline
+                    no</label>
+            </li>
+
+        </ul>
+        <ul>
+            <li>
+
+                <p>3. Para que position: absolute funcione correctamente, ¿qué necesita el elemento padre?</p>
+                <label><input type="radio" name="p3" value="a"> A. position: relative</label>
+                <label><input type="radio" name="p3" value="b"> B. display: block</label>
+                <label><input type="radio" name="p3" value="c"> C. border: 1px solid black</label>
+            </li>
+        </ul>
+        <ul>
+            <li>
+
+                <p>4. ¿Qué hace display: none en un elemento?</p>
+                <label><input type="radio" name="p4" value="a"> A. Lo hace transparente pero sigue ocupando
+                    espacio</label>
+                <label><input type="radio" name="p4" value="b"> B. Lo elimina visualmente y deja de ocupar
+                    espacio</label>
+                <label><input type="radio" name="p4" value="c"> C. Lo oculta pero sigue ocupando su espacio</label>
+            </li>
+        </ul>
 
     </form>
+
 </body>
+
 </html>
