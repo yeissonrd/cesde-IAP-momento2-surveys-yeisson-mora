@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+
+
+    <style>
+        header {
+
+            width: 100%;
+            top: 0;
+            text-align: center;
+            padding: 10px;
+            border: solid;
+            border-radius: 10px;
+            background-color: gray;
+
+        }
+
+        h1 {
+            color: yellow;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input,
+        select,
+        textarea {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        /* Aqui tuve que investigar como hacer una excepcion para estos dos inputs ya que no queria el efecto de display:block en estos*/
+        input[type="radio"],
+        input[type="checkbox"] {
+            display: inline;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <H1>Diligencie la siguiente información: </H1>
+    </header>
+    <form action="">
+        <label for=""> Nombre Completo
+            <input type="text" placeholder="Ej: Michael Jackson" required>
+        </label>
+        <label for=""> Correo
+            <input type="email" placeholder="thekingofpop@gmail.com " required>
+        </label>
+        <label for=""> Genero
+            <input type="radio"> Masculino
+            <input type="radio"> Femenino
+        </label>
+        <label for="">Intereses
+            <input type="checkbox" name="html" value="html"> HTML
+            <input type="checkbox" name="css" value="css"> CSS
+            <input type="checkbox" name="git" value="git"> Git
+        </label>
+
+        <label for="nivel">Nivel:</label>
+        <select id="nivel" name="nivel">
+            <option value="">Selecciona</option>
+            <option value="basico">Básico</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+        </select>
+        <label for="">Commentarios:</label>
+        <textarea placeholder="Escribe aquí..."></textarea>
+
+        <label for="">
+            <button type="submit" class="boton">Enviar</button>
+        </label>
+
+
+
+
+
+    </form>
+
+
+ <footer class="footer">“Proyecto académico sin frameworks - 2026 Momento 2”</footer>
+
+
+</body>
+
+</html>

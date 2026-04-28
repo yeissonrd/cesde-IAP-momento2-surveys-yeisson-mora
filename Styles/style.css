@@ -13,37 +13,53 @@ nav li {
   padding: 0;
   display: inline;
   gap: 40px;
-  
 }
 nav a {
   text-decoration: none;
   color: yellow;
-  margin: 20px ;
+  margin: 20px;
 }
 
-.header{
-margin-top: 100px;
-text-align: center;
+.header {
+  margin-top: 100px;
+  text-align: center;
 }
+
+body {
+  margin-top: 20px;
+}
+
+.parrafo {
+  font-size: 20px;
+  text-align: center;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding: 12px ;
+  padding: 12px;
   background-color: black;
   color: yellow;
 }
 
 button {
-    border-radius: 10px;
-    background-color: black;    
-    width: 50%;
-    
-    
-   
+  border-radius: 10px;
+  background-color: black;
+  width: 50%;
 }
 button a {
-    color: red;
-    text-align: center;
+  color: red;
+  text-align: center;
+}
+
+.boton {
+  display: block;
+  border-radius: 10px;
+  margin: 5px auto;
+  color: red;
+}
+button:hover {
+    box-shadow: 0 0 5px red ;
 }
